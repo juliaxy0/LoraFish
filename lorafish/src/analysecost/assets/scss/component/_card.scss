@@ -1,0 +1,30 @@
+// ----------------------------------------------
+// Card Style
+// ----------------------------------------------
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-title2 {
+    font-size: 30px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-hover {
+    transition: 0.2s ease-in;
+
+    &:hover {
+        transform: translate3d(0px, -5px, 0px);
+    }
+}
+
+nav ul{height:200px; width:18%;}
+nav ul{overflow:hidden; overflow-y:scroll;}

@@ -1,0 +1,78 @@
+CREATE DATABASE lorafishDB;
+
+CREATE TABLE alarm (
+  alarm_id INT not null PRIMARY KEY,
+  tankNo VARCHAR(50) not null,
+  maxAcidityLevel double not null,
+  minAcidityLevel double not null,
+  maxOxygenLevel double not null,
+  minOxygenLevel double not null,
+  maxHydrogenLevel double not null,
+  minHydrogenLevel double not null,
+  maxNitrateLevel double not null,
+  minNitrateLevel double not null,
+  maxCarbonDioxideLevel double not null,
+  minCarbonDioxideLevel double not null,
+  maxMercuryLevel double not null,
+  minMercuryLevel double not null,
+  maxHydrogenSulfideLevel double not null,
+  minHydrogenSulfideLevel double not null,
+  maxTemperatureLevel double not null,
+  minTemperatureLevel double not null
+    );
+
+
+INSERT INTO alarm (alarm_id, tankNo, maxAcidityLevel, minAcidityLevel, maxOxygenLevel, minOxygenLevel, maxHydrogenLevel, minHydrogenLevel, maxNitrateLevel, minNitrateLevel, maxCarbonDioxide, minCarbonDioxide, maxMercury, minMercury, maxHydrogenSulfide, minHydrogenSulfide, maxTemperature, minTemperature)
+VALUES
+  ('2301', 'A', '7.8', '6.8', '8', '6.5', '3', '2', '10', '5', '30', '6', '0.01', '0.00', '0.01', '0.00', '27', '23'),
+  ('2302', 'B', '7.8', '6.8', '8', '6.5', '3', '2', '10', '5', '30', '6', '0.01', '0.00', '0.01', '0.00', '27', '23'),
+  ('2303', 'C', '7.8', '6.8', '8', '6.5', '3', '2', '10', '5', '30', '6', '0.01', '0.00', '0.01', '0.00', '27', '23'),
+  ('2304', 'D', '7.8', '6.8', '8', '6.5', '3', '2', '10', '5', '30', '6', '0.01', '0.00', '0.01', '0.00', '27', '23'),
+  ('2305', 'E', '7.8', '6.8', '8', '6.5', '3', '2', '10', '5', '30', '6', '0.01', '0.00', '0.01', '0.00', '27', '23');
+
+
+
+user 1 : Public
+
+email : haikal@gmail.com
+password : ha123
+
+user 2 : Management
+
+email : mariam@gmail.com
+password : ma123
+
+user 3 : Maintenance
+
+email : daud@gmail.com
+password : da123
+
+user 4 Purchaser
+
+email : zulaikha@gmail.com
+password : zu123
+
+
+
+
+
+create table users1(
+    userid INT(100) not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(100) not null,
+    email varchar(100) UNIQUE not null,
+    password varchar(100) not null,
+    category varchar(100) not null,
+	verification_token varchar(255),
+	isverify int(100),
+reset_token varchar(256)
+    );
+
+insert into users1 (name, email, password, category, verification_token, isverify) values 
+('Haikal', 'haikal@gmail.com', 'ha123', 'Public', 'sdfkjhsdfs', '1'); 
+insert into users1 (name, email, password, category, verification_token, isverify) values 
+('Mariam', 'mariam@gmail.com', 'ma123', 'Management', 'dsdasfhf', '1'); 
+insert into users1 (name, email, password, category, verification_token, isverify) values 
+('Daud', 'daud@gmail.com', 'da123', 'Maintenance', 'jhgfdfdfd', '1'); 
+insert into users1 (name, email, password, category, verification_token, isverify) values 
+('Zulaikha', 'zulaikha@gmail.com', 'zu123', 'Purchaser', 'oiyhthtrr443sd', '1'); 
+
